@@ -1,0 +1,13 @@
+node_modules/
+frontend/dist/
+__pycache__/
+backend/models/*
+!backend/models/.gitkeep
+training/news-veracity-corpus/
+training/mbert_results/
+training/*.png
+training/train.log
+*.log
+*.tsbuildinfo
+*.pyc
+.venv/
