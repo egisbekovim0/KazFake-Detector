@@ -6,6 +6,30 @@ The repository has three parts: the original experiment, the trained-model expor
 
 > This is news-veracity *classification* learned from a corpus. It does not search external sources or verify factual claims, and it is not a fact checker.
 
+## Screenshots
+
+### Overview
+
+![Overview page](assets/overview.png)
+
+### Live Demo
+
+**Texts from the corpus test split** (not seen during training):
+
+| REAL · Kazakh | FAKE · Russian |
+|---|---|
+| ![Dataset REAL example](assets/demo-dataset-real-kz.png) | ![Dataset FAKE example](assets/demo-dataset-fake-ru.png) |
+| 5 of 5 models: REAL | 5 of 5 models: FAKE |
+
+**New texts written for testing** (not in the corpus):
+
+| REAL-style · Russian | FAKE · Kazakh |
+|---|---|
+| ![Custom REAL example](assets/demo-custom-real-ru.png) | ![Custom FAKE example](assets/demo-custom-fake-kz.png) |
+| 4 of 5 models: REAL (Random Forest: FAKE) | 5 of 5 models: FAKE |
+
+On new texts the models respond mostly to writing style. A formal, news-agency tone leans REAL, and urgency, capital letters and "share this" phrasing lean FAKE, whether or not the claim is actually true.
+
 ## Models
 
 1. Logistic Regression
